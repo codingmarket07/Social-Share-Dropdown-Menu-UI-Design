@@ -3,6 +3,8 @@
 :root {
   --white: #fff;
   --icon-clr: #aaaaaa;
+  --bg1-clr: #f173c6;
+  --bg2-clr: #fd6b9a;
   --facebook-clr: #3b5998;
   --twitter-clr: #55acee;
   --instagram-clr: #bc2a8d;
@@ -20,13 +22,13 @@
 }
 
 body {
-  background: linear-gradient(to right, #f173c6, #fd6b9a);
+  background: linear-gradient(to right, var(--bg1-clr), var(--bg2-clr));
 }
 
 .wrapper {
   display: flex;
   justify-content: center;
-  margin: 30px 0;
+  margin: 100px 0;
 }
 
 .ss_wrap {
@@ -45,6 +47,11 @@ body {
   font-size: 20px;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.ss_wrap .ss_btn:hover,
+.ss_wrap .ss_btn.active{
+  color: var(--bg1-clr);
 }
 
 .ss_btn .icon {
